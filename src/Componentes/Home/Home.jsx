@@ -1,28 +1,32 @@
-import { useContext } from 'react';
-import { DiscosContext } from '../../Context/Context';
+import { useContext } from "react";
+import { DiscosContext } from "../../Context/Context";
+import { Link } from "react-router-dom"; 
+import './Home.css'
 
 const Home = () => {
-  const { discos } = useContext(DiscosContext);
-
-  // Verifica si los discos se están cargando
-  console.log(discos);
+  const { discos = [] } = useContext(DiscosContext);
 
   return (
-    <div>
+    
+    <div >
+      <div className="titulo-catalogo">
       <h1>Catálogo</h1>
-      <div>
+      </div>
+      <div className="catalogo">
         {discos.length > 0 ? (
           discos.map((disco) => (
-            <card key={disco.id}>
+            <div key={disco.id} className="card">
               <img 
                 src={disco.portada} 
                 alt={disco.nombre} 
                 style={{ width: '150px', height: '150px' }} 
+                onError={'Portada no disponible'}
               />
-              <p>{disco.nombre}</p>
+              <h2>{disco.nombre}</h2>
               <p>{disco.artista}</p>
               <p>Precio: ${disco.precio}</p>
-            </card>
+              <Link to={`/disco/${disco.id}`}>Ver detalles</Link>
+            </div>
           ))
         ) : (
           <p>No se encontraron discos</p>
