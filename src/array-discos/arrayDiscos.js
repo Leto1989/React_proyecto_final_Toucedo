@@ -588,7 +588,7 @@ const discos = [
         pais: 'estados-unidos',
         id: 60,
         precio: '300',
-        portada: '/portadas/the-miseducation-of-lauryn-hill.jpg'
+        portada: '/portadas/the-miseducation-of-lauryn-Hill.jpg'
     },
     {
         nombre: 'In the flat field',

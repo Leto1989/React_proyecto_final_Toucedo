@@ -7,6 +7,7 @@ const ItemDetail = () => {
   const { id } = useParams(); 
   
   const { discos } = useContext(DiscosContext); 
+  const navigate = useNavigate();
   
   // Asegúrate de que el id sea un número y lo comparamos con disco.id
   const disco = discos.find(disco => disco.id === parseInt(id));
@@ -21,6 +22,10 @@ const ItemDetail = () => {
     );
   }
 
+  const capitalizeFirstLetter = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  };
+
   return (
     <div className="item-detail">
       <h1>Detalles del Disco</h1>
@@ -31,9 +36,9 @@ const ItemDetail = () => {
       />
       <h2> {disco.nombre}</h2>
       <p>Artista: {disco.artista}</p>
-      <p>País: {disco.pais}</p>
+      <p>País: {capitalizeFirstLetter(disco.pais)}</p>
       <p>Año: {disco.lanzamiento}</p>
-      <p>Género: {disco.genero}</p>
+      <p>Género: {capitalizeFirstLetter(disco.genero)}</p>
       <p>Precio: ${disco.precio}</p>
       <button onClick={() => navigate("/")}>Volver al catálogo</button>
     </div>
