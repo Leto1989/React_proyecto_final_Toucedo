@@ -1,16 +1,22 @@
 import { useContext } from "react";
 import { DiscosContext } from "../../Context/Context";
-import { Link } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom"; 
 import './Home.css'
 
 const Home = () => {
   const { discos = [] } = useContext(DiscosContext);
 
+  const navigate = useNavigate();
+
+  const handleVerDetalles = (id) => {
+    console.log("Navegando al detalle del disco con id:", id);
+    navigate(`/disco/${id}`);
+  };
+
   return (
-    
-    <div >
+    <div className="home-container">
       <div className="titulo-catalogo">
-      <h1>Catálogo</h1>
+        <h1>Catálogo</h1>
       </div>
       <div className="catalogo">
         {discos.length > 0 ? (
@@ -19,13 +25,14 @@ const Home = () => {
               <img 
                 src={disco.portada} 
                 alt={disco.nombre} 
-                style={{ width: '150px', height: '150px' }} 
-                onError={'Portada no disponible'}
+                className="portada"
               />
               <h2>{disco.nombre}</h2>
               <p>{disco.artista}</p>
               <p>Precio: ${disco.precio}</p>
-              <Link to={`/disco/${disco.id}`}>Ver detalles</Link>
+              <button className="ver-detalles-btn" onClick={() => handleVerDetalles(disco.id)}>
+                Ver detalles
+              </button>
             </div>
           ))
         ) : (

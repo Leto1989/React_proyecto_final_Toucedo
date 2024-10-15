@@ -6,7 +6,7 @@ const discos = [
         lanzamiento: '1951',
         genero: 'clasica',
         pais: 'alemania',
-        id: '1',
+        id: 1,
         precio: '200',
         portada: '/portadas/9na-sinfonia.jpg'
     },
@@ -16,7 +16,7 @@ const discos = [
         lanzamiento: '1978',
         genero: 'samba',
         pais: 'brasil',
-        id: '2',
+        id: 2,
         precio: '150',
         portada: '/portadas/a-banda-do-ze-pretinho.jpg'
     },
@@ -26,7 +26,7 @@ const discos = [
         lanzamiento: '1973',
         genero: 'bossa-nova',
         pais: 'brasil',
-        id: '3',
+        id: 3,
         precio: '250',
         portada: '/portadas/joao-gilberto.jpg'
     },
@@ -36,7 +36,8 @@ const discos = [
         lanzamiento: '2005',
         genero: 'samba',
         pais: 'brasil',
-        id: '280',
+        id: 4,
+        precio: '280',
         portada: '/portadas/os-afro-sambas.jpg'
     },
     {
@@ -45,7 +46,7 @@ const discos = [
         lanzamiento: '1992',
         genero: 'rock',
         pais: 'argentina',
-        id: '5',
+        id: 5,
         precio: '200',
         portada: '/portadas/el-amor-despues-del-amor.jpg'
     },
@@ -55,7 +56,7 @@ const discos = [
         lanzamiento: '2013',
         genero: 'opera',
         pais: 'alemania',
-        id: '6',
+        id: 6,
         precio: '300',
         portada: '/portadas/gotterdamerung.jpg'
     },
@@ -66,7 +67,7 @@ const discos = [
         lanzamiento: '1986',
         genero: 'bossa-nova',
         pais: 'brasil',
-        id: '7',
+        id:7,
         precio: '300',
         portada: '/portadas/caetano-veloso.jpg'
     },
@@ -76,17 +77,17 @@ const discos = [
         lanzamiento: '1985',
         genero: 'Rock',
         pais: 'argentina',
-        id: '8',
+        id: 8,
         precio: '200',
         portada: '/portadas/giros.jpg'
     },
     {
-        nombre: 'Wagner: Tristan und Isolde',
+        nombre: 'Tristan und Isolde',
         artista: 'Richard Wagner',
         lanzamiento: '1966',
         genero: 'opera',
         pais: 'argentina',
-        id: '9',
+        id: 10,
         precio: '300',
         portada: '/portadas/tristan-und-isolde.jpg'
     },
@@ -95,7 +96,7 @@ const discos = [
         artista: 'Joao Gilberto',
         lanzamiento: '2021',
         genero: 'bossa',
-        id: '10',
+        id: 11,
         precio: '250',
         portada: '/portadas/live-at-umbria-jazz.jpeg'
     },
@@ -105,7 +106,7 @@ const discos = [
         lanzamiento: '2013',
         genero: 'merengue',
         pais: 'republica-dominicana',
-        id: '11',
+        id: 12,
         precio: '300',
         portada: '/portadas/asondeguerra-tour.jpg'
     },
@@ -115,7 +116,7 @@ const discos = [
         lanzamiento: '2002',
         genero: 'clasica',
         pais: 'rusia',
-        id: '12',
+        id: 13,
         precio: '200',
         portada: '/portadas/swan-lake.jpg'
     },
@@ -125,7 +126,7 @@ const discos = [
         lanzamiento: '1988',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '13',
+        id: 14,
         precio: '250',
         portada: '/portadas/seventh-son-of-a-seventh-son.jpg'
     },
@@ -135,7 +136,7 @@ const discos = [
         lanzamiento: '1986',
         genero: 'rock',
         pais: 'argentina',
-        id: '14',
+        id: 15,
         precio: '230',
         portada: '/portadas/la-la-la.jpg'
     },
@@ -145,7 +146,7 @@ const discos = [
         lanzamiento: '1986',
         genero: 'rock',
         pais: 'argentina',
-        id: '15',
+        id: 16,
         precio: '230',
         portada: '/portadas/oktubre.jpg'
     },
@@ -155,7 +156,7 @@ const discos = [
         lanzamiento: '1985',
         genero: 'rock',
         pais: 'argentina',
-        id: '16',
+        id: 17,
         precio: '230',
         portada: '/portadas/gulp.jpg'
     },
@@ -165,7 +166,7 @@ const discos = [
         lanzamiento: '2012',
         genero: 'hip-hop',
         pais: 'estados-unidos',
-        id: '17',
+        id: 18,
         precio: '280',
         portada: '/portadas/good-kid-maad-city.jpg'
     },
@@ -175,7 +176,7 @@ const discos = [
         lanzamiento: '2014',
         genero: 'hip-hop',
         pais: 'estados-unidos',
-        id: '18',
+        id: 19,
         precio: '280',
         portada: '/portadas/forest-hills-drive.jpg'
     },
@@ -185,7 +186,7 @@ const discos = [
         lanzamiento: '1994',
         genero: 'hip-hop',
         pais: 'estados-unidos',
-        id: '19',
+        id: 20,
         precio: '300',
         portada: '/portadas/illmatic.jpg'
     },
@@ -195,7 +196,7 @@ const discos = [
         lanzamiento: '1964',
         genero: 'jazz',
         pais: 'estados-unidos',
-        id: '20',
+        id: 21,
         precio: '300',
         portada: '/portadas/solo-monk.jpeg'
     },
@@ -205,7 +206,7 @@ const discos = [
         lanzamiento: '1996',
         genero: 'hip-hop',
         pais: 'estados-unidos',
-        id: '21',
+        id: 22,
         precio: '250',
         portada: '/portadas/the-score.jpg'
     },
@@ -215,7 +216,7 @@ const discos = [
         lanzamiento: '2019',
         genero: 'tango',
         pais: 'argentina',
-        id: '22',
+        id: 23,
         precio: '300',
         portada: '/portadas/matasano.jpg'
     },
@@ -225,7 +226,7 @@ const discos = [
         lanzamiento: '1984',
         genero: 'samba',
         pais: 'brasil',
-        id: '23',
+        id: 24,
         precio: '280',
         portada: '/portadas/nave-maria.jpg'
     },
@@ -235,7 +236,7 @@ const discos = [
         lanzamiento: '1985',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '24',
+        id: 25,
         precio: '280',
         portada: '/portadas/the-head-on-the-door.jpg'
     },
@@ -245,7 +246,7 @@ const discos = [
         lanzamiento: '2003',
         genero: 'rock',
         pais: 'uruguay',
-        id: '25',
+        id: 26,
         precio: '230',
         portada: '/portadas/amanecer-buho.jpg'
     },
@@ -255,7 +256,7 @@ const discos = [
         lanzamiento: '1987',
         genero: 'rock',
         pais: 'uruguay',
-        id: '26',
+        id: 27,
         precio: '300',
         portada: '/portadas/sur.jpg'
     },
@@ -265,7 +266,7 @@ const discos = [
         lanzamiento: '1982',
         genero: 'rock',
         pais: 'uruguay',
-        id: '27',
+        id: 28,
         precio: '250',
         portada: '/portadas/siempre-son-las-cuatro.jpg'
     },
@@ -275,7 +276,7 @@ const discos = [
         lanzamiento: '1981',
         genero: 'rock',
         pais: 'uruguay',
-        id: '28',
+        id: 29,
         precio: '300',
         portada: '/portadas/aquello.jpg'
     },
@@ -285,7 +286,7 @@ const discos = [
         lanzamiento: '1974',
         genero: 'folklore',
         pais: 'venezuela',
-        id: '29',
+        id: 30,
         precio: '300',
         portada: '/portadas/tonadas.jpg'
     },
@@ -295,7 +296,7 @@ const discos = [
         lanzamiento: '1982',
         genero: 'opera',
         pais: 'italia',
-        id: '30',
+        id: 31,
         precio: '350',
         portada: '/portadas/turandot.jpg'
     },
@@ -305,7 +306,7 @@ const discos = [
         lanzamiento: '1979',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '31',
+        id: 32,
         precio: '280',
         portada: '/portadas/london-calling.jpg'
     },
@@ -315,7 +316,7 @@ const discos = [
         lanzamiento: '1996',
         genero: 'rock',
         pais: 'argentina',
-        id: '32',
+        id: 33,
         precio: '230',
         portada: '/portadas/luzbelito.jpeg'
     },
@@ -325,7 +326,7 @@ const discos = [
         lanzamiento: '1991',
         genero: 'rock',
         pais: 'argentina',
-        id: '33',
+        id: 34,
         precio: '230',
         portada: '/portadas/la-mosca-y-la-sopa.jpg'
     },
@@ -335,7 +336,7 @@ const discos = [
         lanzamiento: '1973',
         genero: 'rock',
         pais: 'argentina',
-        id: '34',
+        id: 35,
         precio: '350',
         portada: '/portadas/artaud.jpg'
     },
@@ -345,7 +346,7 @@ const discos = [
         lanzamiento: '1984',
         genero: 'rock',
         pais: 'argentina',
-        id: '35',
+        id: 36,
         precio: '350',
         portada: '/portadas/piano-bar.jpg'
     },
@@ -355,7 +356,7 @@ const discos = [
         lanzamiento: '1983',
         genero: 'rock',
         pais: 'argentina',
-        id: '36',
+        id: 37,
         precio: '300',
         portada: '/portadas/clics-modernos.jpg'
 
@@ -366,7 +367,7 @@ const discos = [
         lanzamiento: '2012',
         genero: 'tango',
         pais: 'argentina',
-        id: '37',
+        id: 38,
         precio: '300',
         portada: '/portadas/la-trampera.jpg'
     },
@@ -376,7 +377,7 @@ const discos = [
         lanzamiento: '2013',
         genero: 'tango',
         pais: 'argentina',
-        id: '38',
+        id: 39,
         precio: '300',
         portada: '/portadas/troilo-grela.jpg'
     },
@@ -386,7 +387,7 @@ const discos = [
         lanzamiento: '1973',
         genero: 'forro',
         pais: 'brasil',
-        id: '39',
+        id: 40,
         precio: '300',
         portada: '/portadas/festa-no-sertao.jpg'
     },
@@ -396,16 +397,16 @@ const discos = [
         lanzamiento: '2003',
         genero: 'forro',
         pais: 'brasil',
-        id: '40',
+        id: 41,
         precio: '300',
         portada: '/portadas/cada-um-belisca-um-pouco.jpg',
     },
     {
-        nombre: 'Wagner: Parsifal',
+        nombre: 'Parsifal',
         artista: 'Richard Wagner',
         lanzamiento: '1973',
         genero: 'opera',
-        id: '41',
+        id: 42,
         precio: '250',
         portada: '/portadas/parsifal.jpg'
     },
@@ -415,7 +416,7 @@ const discos = [
         lanzamiento: '1996',
         genero: 'salsa',
         pais: 'puerto-rico',
-        id: '42',
+        id: 43,
         precio: '300',
         portada: '/portadas/show.jpg'
     },
@@ -425,7 +426,7 @@ const discos = [
         lanzamiento: '1967',
         genero: 'bossa-nova',
         pais: 'brasil',
-        id: '43',
+        id: 44,
         precio: '300',
         portada: '/portadas/wave.jpg'
     },
@@ -435,7 +436,7 @@ const discos = [
         lanzamiento: '1986',
         genero: 'samba',
         pais: 'brasil',
-        id: '44',
+        id: 45,
         precio: '250',
         portada: '/portadas/alo-malandragem-maloca-o-flagrante.jpg'
     },
@@ -445,7 +446,7 @@ const discos = [
         lanzamiento: '2011',
         genero: 'hip-hop',
         pais: 'estados-unidos',
-        id: '45',
+        id: 46,
         precio: '300',
         portada: '/portadas/the-sideline-story.jpeg'
     },
@@ -455,7 +456,7 @@ const discos = [
         lanzamiento: '1972',
         genero: 'salsa',
         pais: 'puerto-rico',
-        id: '46',
+        id: 47,
         precio: '200',
         portada: '/portadas/esto-fue-lo-que-trajo-el-barco.jpg'
     },
@@ -465,7 +466,7 @@ const discos = [
         lanzamiento: '1982',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '47',
+        id: 48,
         precio: '200',
         portada: '/portadas/combat-rock.jpg'
     },
@@ -475,7 +476,7 @@ const discos = [
         lanzamiento: '1973',
         genero: 'funk',
         pais: 'estados-unidos',
-        id: '48',
+        id: 49,
         precio: '300',
         portada: '/portadas/the-payback.jpg'
     },
@@ -485,7 +486,7 @@ const discos = [
         lanzamiento: '1962',
         genero: 'jazz',
         pais: 'estados-unidos',
-        id: '49',
+        id: 50,
         precio: '350',
         portada: '/portadas/tijuana-moods.jpg'
     },
@@ -495,7 +496,7 @@ const discos = [
         lanzamiento: '1974',
         genero: 'bossa-nova',
         pais: 'brasil',
-        id: '50',
+        id: 51,
         precio: '300',
         portada: '/portadas/elis-&-tom.jpg'
     },
@@ -505,7 +506,7 @@ const discos = [
         lanzamiento: '1970',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '51',
+        id: 52,
         precio: '300',
         portada: '/portadas/paranoid.jpg'
     },
@@ -515,7 +516,7 @@ const discos = [
         lanzamiento: '2002',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '52',
+        id: 53,
         precio: '250',
         portada: '/portadas/rock-in-rio.jpg'
     },
@@ -525,7 +526,7 @@ const discos = [
         lanzamiento: '1980',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '53',
+        id: 54,
         precio: '200',
         portada: '/portadas/iron-maiden.jpg'
     },
@@ -535,7 +536,7 @@ const discos = [
         lanzamiento: '1978',
         genero: 'rock',
         pais: 'Inglaterra',
-        id: '54',
+        id: 55,
         precio: '250',
         portada: '/portadas/the-scream.jpg'
     },
@@ -545,7 +546,7 @@ const discos = [
         lanzamiento: '1972',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '55',
+        id: 56,
         precio: '230',
         portada: '/portadas/close-to-the-edge.jpg'
     },
@@ -555,7 +556,7 @@ const discos = [
         lanzamiento: '1981',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '56',
+        id:57,
         precio: '300',
         portada: '/portadas/mask.jpg'
     },
@@ -565,7 +566,7 @@ const discos = [
         lanzamiento: '1975',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '57',
+        id: 58,
         precio: '250',
         portada: '/portadas/physical-graffiti.jpg'
     },
@@ -575,7 +576,7 @@ const discos = [
         lanzamiento: '1972',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '58',
+        id: 59,
         precio: '300',
         portada: '/portadas/made-in-japan.jpg'
     },
@@ -585,7 +586,7 @@ const discos = [
         lanzamiento: '1998',
         genero: 'hip-hop',
         pais: 'estados-unidos',
-        id: '59',
+        id: 60,
         precio: '300',
         portada: '/portadas/the-miseducation-of-lauryn-hill.jpg'
     },
@@ -595,7 +596,7 @@ const discos = [
         lanzamiento: '1980',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '60',
+        id: 61,
         precio: '200',
         portada: '/portadas/in-the-flat-field.jpg'
     },
@@ -605,7 +606,7 @@ const discos = [
         lanzamiento: '1986',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '61',
+        id: 62,
         precio: '280',
         portada: '/portadas/tinderbox.jpg'
     },
@@ -615,7 +616,7 @@ const discos = [
         lanzamiento: '1997',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '62',
+        id: 63,
         precio: '300',
         portada: '/portadas/ok-computer.jpg'
     },
@@ -625,7 +626,7 @@ const discos = [
         lanzamiento: 'mayo 2, 1989',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '63',
+        id: 64,
         precio: '250',
         portada: '/portadas/disintegration.jpg'
     },
@@ -635,7 +636,7 @@ const discos = [
         lanzamiento: 'enero 1, 1970',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '64',
+        id: 65,
         precio: '300',
         portada: '/portadas/led-zepellin-three.jpg'
     },
@@ -645,7 +646,7 @@ const discos = [
         lanzamiento: ' enero 11, 1971',
         genero: 'rock',
         pais: 'estados-unidos',
-        id: '65',
+        id: 66,
         precio: '350',
         portada: '/portadas/pearl.jpg'
     },
@@ -655,7 +656,7 @@ const discos = [
         lanzamiento: 'agosto 5, 1974',
         genero: 'samba',
         pais: 'brasil',
-        id: '66',
+        id: 67,
         precio: '250',
         portada: '/portadas/adoniran-barbosa.jpg'
     },
@@ -665,7 +666,7 @@ const discos = [
         lanzamiento: 'septiembre 3, 2007',
         genero: 'samba',
         pais: 'brasil',
-        id: '67',
+        id: 68,
         precio: '300',
         portada: '/portadas/yamandu-dominginhos.jpg'
     },
@@ -675,7 +676,7 @@ const discos = [
         lanzamiento: '1977',
         genero: 'country',
         pais: 'estados-unidos',
-        id: '68',
+        id: 69,
         precio: '350',
         portada: '/portadas/ol-waylon.jpg'
     },
@@ -685,7 +686,7 @@ const discos = [
         lanzamiento: '2001',
         genero: 'samba',
         pais: 'brasil',
-        id: '69',
+        id: 70,
         precio: '200',
         portada: '/portadas/yamandu.jpg'
     },
@@ -695,7 +696,7 @@ const discos = [
         lanzamiento: '2000',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '70',
+        id: 71,
         precio: '350',
         portada: '/portadas/kid-a.jpg'
     },
@@ -705,7 +706,7 @@ const discos = [
         lanzamiento: '1987',
         genero: 'bossa-nova',
         pais: 'brasil',
-        id: '71',
+        id: 72,
         precio: '200',
         portada: '/portadas/caetano-veloso.jpg'
     },
@@ -715,7 +716,7 @@ const discos = [
         lanzamiento: '1971',
         genero: 'bossa-nova',
         pais: 'brasil',
-        id: '72',
+        id: 73,
         precio: '280',
         portada: '/portadas/construcao.jpg'
     },
@@ -725,7 +726,7 @@ const discos = [
         lanzamiento: '1968',
         genero: 'bossa-nova',
         pais: 'brasil',
-        id: '73',
+        id: 74,
         precio: '300',
         portada: '/portadas/chico-buarque-de-hollanda-vol-3.jpg'
     },
@@ -735,7 +736,7 @@ const discos = [
         lanzamiento: '1976',
         genero: 'afro-beat',
         pais: 'nigeria',
-        id: '74',
+        id: 75,
         precio: '350',
         portada: '/portadas/zombie.jpg'
     },
@@ -745,7 +746,7 @@ const discos = [
         lanzamiento: '1976',
         genero: 'samba',
         pais: 'brasil',
-        id: '75',
+        id: 76,
         precio: '230',
         portada: '/portadas/cartola.jpg'
     },
@@ -755,7 +756,7 @@ const discos = [
         lanzamiento: '1994',
         genero: 'hip-hop',
         pais: 'estados-unidos',
-        id: '76',
+        id: 77,
         precio: '280',
         portada: '/portadas/ready-to-die.jpg'
     },
@@ -765,7 +766,7 @@ const discos = [
         lanzamiento: '1969',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '77',
+        id: 78,
         precio: '350',
         portada: '/portadas/abbey-road.jpg'
     },
@@ -775,7 +776,7 @@ const discos = [
         lanzamiento: '1970',
         genero: 'jazz',
         pais: 'estados-unidos',
-        id: '78',
+        id: 79,
         precio: '350',
         portada: '/portadas/extensions.jpg'
     },
@@ -784,7 +785,7 @@ const discos = [
         artista: 'Cachao',
         lanzamiento: '1994',
         pais: 'cuba',
-        id: '79',
+        id: 80,
         precio: '300',
         portada: '/portadas/cachao-master-sessions.jpg'
     },
@@ -794,7 +795,7 @@ const discos = [
         lanzamiento: '1973',
         genero: 'afro-beat',
         pais: 'nigeria',
-        id: '80',
+        id: 81,
         precio: '300',
         portada: '/portadas/gentleman.jpg'
     },
@@ -804,7 +805,7 @@ const discos = [
         lanzamiento: '1976',
         genero: 'afro-beat',
         pais: 'nigeria',
-        id: '81',
+        id: 82,
         precio: '250',
         portada: '/portadas/prince-nico-mbarga-1976.jpg'
     },
@@ -814,7 +815,7 @@ const discos = [
         lanzamiento: '1991',
         genero: 'rock',
         pais: 'estados-unidos',
-        id: '82',
+        id:83,
         precio: '280',
         portada: '/portadas/nevermind.jpg'
     },
@@ -824,7 +825,7 @@ const discos = [
         lanzamiento: '1981',
         genero: 'folclore',
         pais: 'inglaterra',
-        id: '83',
+        id: 84,
         precio: '300',
         portada: '/portadas/palimpsesto.jpg'
     },
@@ -834,7 +835,7 @@ const discos = [
         lanzamiento: '1988',
         genero: 'rock',
         pais: 'estados unidos',
-        id: '84',
+        id: 85,
         precio: '250',
         portada: '/portadas/surfer-rosa.jpg'
     },
@@ -844,7 +845,7 @@ const discos = [
         lanzamiento: '1973',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '85',
+        id: 86,
         precio: '300',
         portada: '/portadas/the-dark-side-of-the-moon.jpg'
     },
@@ -854,7 +855,7 @@ const discos = [
         lanzamiento: '1979',
         genero: 'rock',
         pais: 'inglaterra',
-        id: '86',
+        id: 87,
         precio: '300',
         portada: '/portadas/the-wall.jpg'
     },
@@ -864,7 +865,7 @@ const discos = [
         lanzamiento: '1957',
         genero: 'jazz',
         pais: 'estados-unidos',
-        id: '87',
+        id: 88,
         precio: '350',
         portada: '/portadas/miles-ahead.jpg'
     },
@@ -874,7 +875,7 @@ const discos = [
         lanzamiento: '1978',
         genero: 'folclore',
         pais: 'uruguay',
-        id: '88',
+        id: 89,
         precio: '230',
         portada: '/portadas/guitarra-negra.jpg'
     },
@@ -884,7 +885,7 @@ const discos = [
         lanzamiento: '1971',
         genero: 'mpu',
         pais: 'uruguay',
-        id: '89',
+        id: 90,
         precio: '300',
         portada: '/portadas/mateo-solo-bien-se-lame.jpg'
     },
@@ -894,7 +895,7 @@ const discos = [
         lanzamiento: '1983',
         genero: 'mpu',
         pais: 'inglaterra',
-        id: '90',
+        id: 91,
         precio: '300',
         portada: '/portadas/dos.jpg'
     },
@@ -904,7 +905,7 @@ const discos = [
         lanzamiento: '1979',
         genero: 'pop',
         pais: 'estados-unidos',
-        id: '91',
+        id: 92,
         precio: '200',
         portada: '/portadas/off-the-wall.jpg'
         
