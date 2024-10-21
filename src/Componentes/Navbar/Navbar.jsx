@@ -1,7 +1,11 @@
-import {Link} from 'react-router-dom'
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { DiscosContext } from '../../Context/Context';
 import './Navbar.css';
 
 const Navbar = () => {
+  const { carrito } = useContext(DiscosContext);
+
   return (
     <nav>
       <ul>
@@ -17,11 +21,11 @@ const Navbar = () => {
           <Link to='/generos'> Géneros </Link>
         </li>
         <li>
-          <Link to='/cartWidget'> Carrito </Link>
+          <Link to="/carrito">Carrito ({carrito.length})</Link>
         </li>
       </ul>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

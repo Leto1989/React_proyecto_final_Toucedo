@@ -5,12 +5,17 @@ import './ItemDetail.css';
 
 const ItemDetail = () => {
   const { id } = useParams(); 
-  const { discos } = useContext(DiscosContext); 
+  const { discos, agregarAlCarrito } = useContext(DiscosContext); 
   const navigate = useNavigate();
   
   // Busca el disco por ID
   const disco = discos.find(disco => disco.id === parseInt(id));
-  console.log("Disco encontrado:", disco); // Verifica si el disco se encuentra
+
+  const handleAddToCart = () => {
+    agregarAlCarrito(disco);
+    alert(`${disco.nombre} ha sido agregado al carrito!`);
+  };
+  
 
   if (!disco) {
     return (
@@ -39,6 +44,7 @@ const ItemDetail = () => {
       <p>Año: {disco.lanzamiento}</p>
       <p>Género: {capitalizeFirstLetter(disco.genero)}</p>
       <p>Precio: ${disco.precio}</p>
+      <button onClick={handleAddToCart}>Agregar al carrito</button>
       <button onClick={() => navigate("/")}>Volver al catálogo</button>
     </div>
   );

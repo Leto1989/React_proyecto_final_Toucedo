@@ -1,0 +1,25 @@
+.cart-widget {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .cart-widget h2 {
+    margin-bottom: 15px;
+  }
+  
+  .cart-widget ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-widget li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart-widget img {
+    margin-right: 10px;
+  }

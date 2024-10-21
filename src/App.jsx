@@ -6,6 +6,7 @@ import ItemDetail from './Componentes/ItemDetail/ItemDetail';
 import Carrito from './Componentes/CartWidget/CartWidget';
 import Navbar from './Componentes/Navbar/Navbar';
 import Generos from './Componentes/Generos/Generos';
+import CartWidget from './Componentes/CartWidget/CartWidget';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/disco/:id" element={<ItemDetail />} />
             <Route path="/generos" element={<Generos/>} />
-            <Route path="/cartWidget" element={<Carrito />} />
+            <Route path="/carrito" element={<CartWidget />} />
           </Routes>
         </BrowserRouter>
       </DiscosProvider>

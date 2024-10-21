@@ -10,13 +10,17 @@ const Generos = () => {
   const generosUnicos = [...new Set(discos.map(disco => disco.genero))];
   const discosFiltrados = filtro ? discos.filter(disco => disco.genero === filtro) : [];
 
+  const capitalizeFirstLetter = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  };
+
   return (
     <div className='generos-page'>
       <h1>Géneros</h1>
       <ul className='generos-list'>
         {generosUnicos.map((genero, index) => (
           <li key={index} onClick={() => setFiltro(genero)}>
-            {genero}
+            {capitalizeFirstLetter(genero)}
           </li>
         ))}
       </ul>

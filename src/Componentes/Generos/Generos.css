@@ -1,6 +1,6 @@
 .generos-page {
   padding: 20px;
-  overflow: auto;
+  overflow: none;
 }
 
 .generos-list {
@@ -13,10 +13,11 @@
 
 .generos-list li {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   cursor: pointer;
   padding: 10px;
-  background-color: #6ecb18;
+  width: 60px;
+  background-color: #cbbf18;
   margin: 5px 5px;
   border-radius: 5px;
   transition: background-color 0.3s;
