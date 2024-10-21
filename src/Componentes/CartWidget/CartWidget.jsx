@@ -6,6 +6,8 @@ import './CartWidget.css';
 const CartWidget = () => {
   const { carrito } = useContext(DiscosContext);
 
+  const total = carrito.reduce((acc, disco) => acc + disco.precio * disco.cantidad, 0);
+
   return (
     <div className="cart-widget">
       <h2>Carrito de Compras</h2>
@@ -21,9 +23,9 @@ const CartWidget = () => {
           ))}
         </ul>
       )}
+      <h3>Total: ${total.toFixed(2)}</h3>
     </div>
   );
 };
 
 export default CartWidget;
-  
